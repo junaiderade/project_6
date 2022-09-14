@@ -85,7 +85,6 @@ function level_order_tree_bfs(root){
     return ret;
 }
 
-
 function print_tree(root){
     if(!root){
         return;

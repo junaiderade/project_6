@@ -1,6 +1,9 @@
 Rules:
 - you must write the classes leetcode style, the function takes a data structure as a parameter,
 not write the functions in the classes
+- comment VERY sparsely
+- no programming paradigms like dynamic programming/etc, you can do that in the project after this one.
+this project is STRICTLY Djikstra
 
 Key:
 🟢 = Data Structure Code File
@@ -10,12 +13,17 @@ Key:
 Array 🟢
     Binary Search
         First and Last 🟡
-        Normal 🟡
+        Normal
+            Iterative Binary Search 🟡
+            Recursive Binary Search 🟡
         Rotated 🟡
     Quick Sort 🟡
     Merge Sort 🟡
     Radix Sort 🟡
     Quick Select 🟡
+    Bubble Sort 🟡
+    Insertion Sort 🟡
+    Selection Sort 🟡
 Tree
     Binary Tree 🟢
         DFS
