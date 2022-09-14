@@ -1,0 +1,56 @@
+Rules:
+- you must write the classes leetcode style, the function takes a data structure as a parameter,
+not write the functions in the classes
+
+Key:
+🟢 = Data Structure Code File
+🟡 = Function within Data Structure Code File
+
+
+Array 🟢
+    Binary Search
+        First and Last 🟡
+        Normal 🟡
+        Rotated 🟡
+    Quick Sort 🟡
+    Merge Sort 🟡
+    Radix Sort 🟡
+    Quick Select 🟡
+Tree
+    Binary Tree 🟢
+        DFS
+            Pre-Order
+                Iterative Pre-Order Traversal 🟡 
+                Recursive Pre-Order Traversal 🟡
+            In-Order
+                Iterative In-Order Traversal 🟡
+                Recursive In-Order Traversal 🟡
+            Post-Order
+                Iterative Post-Order 🟡
+                Recursive Post-Order 🟡
+        BFS 🟡
+        BST Insert 🟡 
+        Is Symmetric 🟡 O(N) & O(N)
+        Maximum Depth 🟡 O(N) & O(N)
+    Red Black Tree 🟢
+Stack 🟢
+    Push 🟡
+    Pop 🟡
+    Peak 🟡
+Queue 🟢
+Heap
+    Priority Queue 🟢
+Graph
+    Weighted, Directed Adjacency List 🟢
+        Djikstra's Algorithm 🟡
+        Insert 🟡
+        Delete 🟡
+Hashmap 🟢
+Trie 🟢
+    Add Word 🟡
+    Does Word Exist 🟡
+    Delete Word 🟡
+
+Linked List 🟢
+    🟢 Singly Linked List
+    🟢 Doubly Linked List
