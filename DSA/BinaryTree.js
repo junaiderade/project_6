@@ -7,21 +7,36 @@ class TreeNode
     }
 }
 
-function isSymmetric(root){
-    return isMirror(root,root);
+function in_order_iterative(root) {//O(N) and O(N)
+    let arr = [];
+    let stack = [];
+    while(root || stack.length > 0){
+        while(root){
+            stack.push(root)
+            root = root.left;
+        }
+        root = stack.pop();
+        arr.push(root.val);
+        root = root.right;
+    }
+    return arr;
+}
 
-    function isMirror(node1,node2){
+function is_symmetric(root) {//O(N) and O(N)
+    return is_mirror(root,root);
+
+    function is_mirror(node1,node2){
         if(!node1 && !node2) return true;
         if(!node1 || !node2) return false;
-        return (node1.val == node2.val) && isMirror(node1.right,node2.left) && isMirror(node1.left,node2.right);
+        return (node1.val == node2.val) && is_mirror(node1.right,node2.left) && is_mirror(node1.left,node2.right);
     }
 }
 
-function maxDepth(root) {
+function max_depth(root) {//O(N) and O(N)
     if(!root){
         return 0
     }
-    return 1 + Math.max(maxDepth(root.left),maxDepth(root.right));
+    return 1 + Math.max(max_depth(root.left),max_depth(root.right));
 };
 
 function insert_BST(root,val){
@@ -36,9 +51,9 @@ function insert_BST(root,val){
     return root;
 }
 
-  function invert(root){
+function invert(root){
     if(!root){
-      return null;
+        return null;
     }
     let temp = root.left;
     root.left = root.right;
@@ -46,23 +61,8 @@ function insert_BST(root,val){
     root.left = invertTree(root.left)
     root.right = invertTree(root.right)
     return root;
-  }
-  
-  function in_order_iterative(root) {
-    let arr = [];
-    let stack = [];
-    while(root || stack.length > 0){
-        while(root){
-            stack.push(root)
-            root = root.left;
-        }
-        root = stack.pop();
-        arr.push(root.val);
-        root = root.right;
-    }
-    return arr;
-  }
-  
+}
+
 function level_order_tree_bfs(root){
     let ret = [];
     let queue = [root];

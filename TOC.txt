@@ -26,6 +26,7 @@ Array 🟢
     Selection Sort 🟡
 Tree
     Binary Tree 🟢
+        BFS 🟡
         DFS
             Pre-Order
                 Iterative Pre-Order Traversal 🟡 
@@ -36,7 +37,6 @@ Tree
             Post-Order
                 Iterative Post-Order 🟡
                 Recursive Post-Order 🟡
-        BFS 🟡
         BST Insert 🟡 
         Is Symmetric 🟡 O(N) & O(N)
         Maximum Depth 🟡 O(N) & O(N)
@@ -53,6 +53,7 @@ Graph
         Djikstra's Algorithm 🟡
         Insert 🟡
         Delete 🟡
+        Topological Sort 🟡
 Hashmap 🟢
 Trie 🟢
     Add Word 🟡

@@ -33,5 +33,29 @@ Questions = [
         optimal_time_complexity:'O(N)',
         optimal_space_complexity:'O(N)',
         comment: 'did this after fresh from a nap. Brain was in good state.'
+    },
+    {
+        name: 'Binary Tree Inorder Traversal',
+        difficulty: 'easy',
+        desc: 'Given the root of a binary tree, return the inorder traversal of its nodes values',
+        date: '9/14/2022',
+        status: 'solved_optimally',
+        minutes_taken: '10',
+        optimal_time_complexity:'O(N)',
+        optimal_space_complexity:'O(N)',
+        comment: 'there was an additional challenge to do it iteratively but didnt feel ike it'
+    },
+    {
+        name: 'Pseudo-Palindromic Paths in a Binary Tree',
+        difficulty: 'medium',
+        desc: '',
+        date: '',
+        status: '',
+        minutes_taken: '',
+        my_time_complexity: '',
+        my_space_complexity: '',
+        optimal_time_complexity:'',
+        optimal_space_complexity:'',
+        comment: ''
     }
 ]
