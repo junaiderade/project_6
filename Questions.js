@@ -48,14 +48,14 @@ Questions = [
     {
         name: 'Pseudo-Palindromic Paths in a Binary Tree',
         difficulty: 'medium',
-        desc: '',
-        date: '',
-        status: '',
-        minutes_taken: '',
-        my_time_complexity: '',
-        my_space_complexity: '',
-        optimal_time_complexity:'',
-        optimal_space_complexity:'',
-        comment: ''
+        desc: 'Given a binary tree where node values are digits from 1 to 9. A path in the binary tree is said to be pseudo-palindromic if at least one permutation of the node values in the path is a palindrome. Return the number of pseudo-palindromic paths going from the root node to leaf nodes.',
+        date: '9/14/2022',
+        status: 'solved_not_optimally',
+        minutes_taken: '60',
+        my_time_complexity: ['idk,11%'],
+        my_space_complexity: ['idk,7%'],
+        optimal_time_complexity:'O(N)',
+        optimal_space_complexity:'O(H), H being number of nodes',
+        comment: 'basically to actually solve this problem I had to create a copy of a map. I had problems understanding this because i didnt know primitive vs reference variables. as you pass a map through a dfs function, if you dont make a copy all calls reference the original map u passed. not the same case with strings.the real solution to this problem involves bit manipulation! aka bitwise operators'
     }
 ]
