@@ -17,13 +17,14 @@ Array 🟢
             Iterative Binary Search 🟡
             Recursive Binary Search 🟡
         Rotated 🟡
+    Bubble Sort 🟡 ✔️ 
+    Insertion Sort 🟡 ✔️
+    Selection Sort 🟡 ✔️
     Quick Sort 🟡
     Merge Sort 🟡
     Radix Sort 🟡
     Quick Select 🟡
-    Bubble Sort 🟡
-    Insertion Sort 🟡
-    Selection Sort 🟡
+
 Tree
     Binary Tree 🟢
         BFS 🟡
@@ -32,14 +33,14 @@ Tree
                 Iterative Pre-Order Traversal 🟡 
                 Recursive Pre-Order Traversal 🟡
             In-Order
-                Iterative In-Order Traversal 🟡
-                Recursive In-Order Traversal 🟡
+                Iterative In-Order Traversal 🟡 ✔️
+                Recursive In-Order Traversal 🟡 ✔️
             Post-Order
                 Iterative Post-Order 🟡
                 Recursive Post-Order 🟡
         BST Insert 🟡 
-        Is Symmetric 🟡 O(N) & O(N)
-        Maximum Depth 🟡 O(N) & O(N)
+        Is Symmetric 🟡 ✔️
+        Maximum Depth 🟡 ✔️
     Red Black Tree 🟢
 Stack 🟢
     Push 🟡
@@ -59,7 +60,6 @@ Trie 🟢
     Add Word 🟡
     Does Word Exist 🟡
     Delete Word 🟡
-
 Linked List 🟢
     🟢 Singly Linked List
     🟢 Doubly Linked List

@@ -7,19 +7,33 @@ class TreeNode
     }
 }
 
-function in_order_iterative(root) {//O(N) and O(N)
-    let arr = [];
-    let stack = [];
-    while(root || stack.length > 0){
-        while(root){
-            stack.push(root)
-            root = root.left;
-        }
-        root = stack.pop();
-        arr.push(root.val);
-        root = root.right;
+function dfs(root){//you have to hardcode change which function this dfs traversal will call
+    let ret = []
+
+    if(!root){
+        return ret;
     }
-    return arr;
+
+    return ret;
+
+    function in_order_iterative(node) {//O(N) and O(N)
+        let stack = [];
+        while(node || stack.length > 0){
+            while(node){
+                stack.push(node)
+                node = node.left;
+            }
+            node = stack.pop();
+            ret.push(node.val);
+            node = node.right;
+        }
+    }
+    
+    function in_order_recursive(node){
+        in_order_recursive(node.left);
+        ret.push(node.val)
+        in_order_recursive(node.right);
+    }
 }
 
 function is_symmetric(root) {//O(N) and O(N)

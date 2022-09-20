@@ -57,5 +57,18 @@ Questions = [
         optimal_time_complexity:'O(N)',
         optimal_space_complexity:'O(H), H being number of nodes',
         comment: 'basically to actually solve this problem I had to create a copy of a map. I had problems understanding this because i didnt know primitive vs reference variables. as you pass a map through a dfs function, if you dont make a copy all calls reference the original map u passed. not the same case with strings.the real solution to this problem involves bit manipulation! aka bitwise operators'
+    },
+    {
+        name: '',
+        difficulty: '',
+        desc: '',
+        date: '',
+        status: '',
+        minutes_taken: '',
+        my_time_complexity: '',
+        my_space_complexity: '',
+        optimal_time_complexity:'',
+        optimal_space_complexity:'',
+        comment: ''
     }
 ]

@@ -1,3 +1,49 @@
+function bubbleSort(arr){//O(n)^2 & O(1)
+  for(let i = 0;i<arr.length-1;i++){
+      let swapped = false;
+      for(let j = 0;j<arr.length-1;j++){
+          if(arr[j]>arr[i]){
+              arr[j] = temp;
+              arr[j] = arr[i];
+              arr[i] = temp;
+              swapped = true;
+          }
+      }
+      if(!swapped) break;
+  }
+  return arr;
+}
+
+function insertionSort(nums){//O(n)^2 & O(1)
+  for (let i = 1; i < nums.length; i++) {
+    let j = i - 1
+    let temp = nums[i]
+    while (j >= 0 && nums[j] > temp) {
+      nums[j+1] = nums[j]
+      j--
+    }
+    nums[j+1] = temp
+  }
+  return nums
+}
+
+function selectionSort(arr){//O(n)^2 & O(1)
+  for(let i = 0;i<arr.length;i++){
+      let min = i;
+      for(let j = i+1;j<arr.length;j++){
+          if(arr[j]<arr[min]){
+              min = j;
+          }
+      }
+      if (min!==i){
+          let temp = arr[i];
+          arr[i] = arr[min];
+          arr[min] = temp;
+      }
+  }
+  return arr;
+}
+
 function binary_search_rotated(nums, target) {
     let left = 0;
     let right = nums.length - 1;
@@ -35,49 +81,49 @@ function binary_search_rotated(nums, target) {
     }
     
     return -1;
-  };
+};
   
-  function binary_search_fist_last(nums,target){
-    let left = 0;
-    let right = nums.length -1;
-    let first = -1;
-    let last = -1;
-  
-    while(left <=right){
-      let mid = left + Math.floor((right - left) / 2);
-      
-      if(nums[mid]==target){
-          first = mid;
-          right = mid -1;
-      }else if(nums[mid] < target){
-          left = mid + 1;
-      }else{
-          right = mid -1;
-      }
+function binary_search_fist_last(nums,target){
+  let left = 0;
+  let right = nums.length -1;
+  let first = -1;
+  let last = -1;
+
+  while(left <=right){
+    let mid = left + Math.floor((right - left) / 2);
+    
+    if(nums[mid]==target){
+        first = mid;
+        right = mid -1;
+    }else if(nums[mid] < target){
+        left = mid + 1;
+    }else{
+        right = mid -1;
     }
-  
-    if(first==-1){
-        return [-1,-1];
-    }
-  
-    left = first;
-    right = nums.length-1;
-  
-    while(left <=right){
-      let mid = left + Math.floor((right - left) / 2);
-      
-      if(nums[mid]==target){
-          last = mid;
-          left = mid + 1;
-      }else if(nums[mid] < target){
-          left = mid + 1;
-      }else{
-          right = mid -1;
-      }
-    }
-  
-    return [first,last];
   }
+
+  if(first==-1){
+      return [-1,-1];
+  }
+
+  left = first;
+  right = nums.length-1;
+
+  while(left <=right){
+    let mid = left + Math.floor((right - left) / 2);
+    
+    if(nums[mid]==target){
+        last = mid;
+        left = mid + 1;
+    }else if(nums[mid] < target){
+        left = mid + 1;
+    }else{
+        right = mid -1;
+    }
+  }
+
+  return [first,last];
+}
 
   function merge(arr1,arr2){ //this is the function just to merge 2 arrays, no the entire mergeSort, the params must be ORDERED arrays
     let results = [];
@@ -173,52 +219,6 @@ function kthSmallest(arr,start,end,k){
   }else{
       return kthSmallest(arr,start,pivot-1,k);
   }
-}
-
-function bubbleSort(arr){
-  for(let i = 0;i<arr.length-1;i++){
-      let swapped = false;
-      for(let j = 0;j<arr.length-1;j++){
-          if(arr[j]>arr[i]){
-              arr[j] = temp;
-              arr[j] = arr[i];
-              arr[i] = temp;
-              swapped = true;
-          }
-      }
-      if(!swapped) break;
-  }
-  return arr;
-}
-
-function insertionSort(nums){
-  for (let i = 1; i < nums.length; i++) {
-    let j = i - 1
-    let temp = nums[i]
-    while (j >= 0 && nums[j] > temp) {
-      nums[j+1] = nums[j]
-      j--
-    }
-    nums[j+1] = temp
-  }
-  return nums
-}
-
-function selectionSort(arr){
-  for(let i = 0;i<arr.length;i++){
-      let min = i;
-      for(let j = i+1;j<arr.length;j++){
-          if(arr[j]<arr[min]){
-              min = j;
-          }
-      }
-      if (min!==i){
-          let temp = arr[i];
-          arr[i] = arr[min];
-          arr[min] = temp;
-      }
-  }
-  return arr;
 }
 
 function getDigit(num, i) { //returns the digit in num at the given place value (basically the index backwards)
