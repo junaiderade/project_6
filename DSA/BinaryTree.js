@@ -14,6 +14,7 @@ function dfs(root){//you have to hardcode change which function this dfs travers
         return ret;
     }
 
+    //choose function and pass root
     return ret;
 
     function in_order_iterative(node) {//O(N) and O(N)

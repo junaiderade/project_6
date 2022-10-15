@@ -1,3 +1,8 @@
+let example = []
+example.unshift(9); //technically O(N)
+let shifted = example.shift() //technically you would use with push if you wanted a queue
+
+
 function bubbleSort(arr){//O(n)^2 & O(1)
   for(let i = 0;i<arr.length-1;i++){
       let swapped = false;
